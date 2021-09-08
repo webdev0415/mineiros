@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RoughJS &amp; D3.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://cdn.rawgit.com/pshihn/rough/9be60b1e/dist/rough.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+    <style>
+        h1 {
+            font-family: 'Amatic SC';
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Process Box Label -->
+<h1 style="position: absolute; left: 295px; top: 165px; color: grey; text-align: center;">Secondary Process<br/>Shared Memory Space</h1>
+
+<!-- Left Thread Labels -->
+<h1 style="position: absolute; left: 85px; top: 50px; color: grey;">Thread</h1>
+<h1 style="position: absolute; left: 85px; top: 175px; color: grey;">Thread</h1>
+<h1 style="position: absolute; left: 85px; top: 300px; color: grey;">Thread</h1>
+
+
+<h1 style="position: absolute; left: 585px; top: 50px; color: grey;">Thread</h1>
+<h1 style="position: absolute; left: 585px; top: 175px; color: grey;">Thread</h1>
+<h1 style="position: absolute; left: 585px; top: 300px; color: grey;">Thread</h1>
+
+<div id="viz"></div>
+
+<script>
+    WebFont.load({
+        google: {
+            families: ['Amatic SC']
+        },
+        active: function () {
+            draw();
+        }
+    });
+
+    function draw() {
+
+        var width = 800, height = 410, margin = 0, labels_px = 120;
+
+        var canvas = d3.select('#viz').append('canvas')
+            .attr("id", "canvas")
+            .attr('width', width)
+            .attr('height', height);
+        var rc = rough.canvas(document.getElementById('canvas'));
+        var objectSettings = {roughness: 1, stroke: 'grey'};
+
+        // Main Rectangle
+        rc.rectangle(250, 100, 200, 200, objectSettings);
+
+        // Left Rectangles
+        rc.rectangle(50, 25, 100, 100, objectSettings);
+        rc.rectangle(50, 150, 100, 100, objectSettings);
+        rc.rectangle(50, 275, 100, 100, objectSettings);
+
+        // Right Rectangles
+        rc.rectangle(550, 25, 100, 100, objectSettings);
+        rc.rectangle(550, 150, 100, 100, objectSettings);
+        rc.rectangle(550, 275, 100, 100, objectSettings);
+
+
+        // Top Left Lines
+        rc.line(200, 75, 150, 75, objectSettings);
+        rc.line(200, 175, 200, 75, objectSettings);
+        rc.line(200, 175, 250, 175, objectSettings);
+
+        // Top Right Lines
+        rc.line(550, 75, 500, 75, objectSettings);
+        rc.line(500, 175, 500, 75, objectSettings);
+        rc.line(500, 175, 450, 175, objectSettings);
+
+        // Middle Left Line
+        rc.line(150, 200, 250, 200, objectSettings);
+
+        // Middle Right Line
+        rc.line(550, 200, 450, 200, objectSettings);
+
+        // Bottom Left Lines
+        rc.line(200, 325, 150, 325, objectSettings);
+        rc.line(200, 225, 200, 325, objectSettings);
+        rc.line(200, 225, 250, 225, objectSettings);
+
+        // Bottom Right Lines
+        rc.line(500, 325, 550, 325, objectSettings);
+        rc.line(500, 225, 500, 325, objectSettings);
+        rc.line(500, 225, 450, 225, objectSettings);
+    }
+</script>
+
+</body>
+</html>

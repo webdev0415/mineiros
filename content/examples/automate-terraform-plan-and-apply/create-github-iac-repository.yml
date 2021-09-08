@@ -1,0 +1,245 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/soerenmartius/projects/github-terraform-example/iac-github
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 42
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 502
+    content: '$ '
+  - delay: 742
+    content: t
+  - delay: 180
+    content: e
+  - delay: 135
+    content: r
+  - delay: 138
+    content: r
+  - delay: 87
+    content: a
+  - delay: 89
+    content: f
+  - delay: 113
+    content: o
+  - delay: 90
+    content: r
+  - delay: 136
+    content: m
+  - delay: 66
+    content: ' '
+  - delay: 160
+    content: i
+  - delay: 201
+    content: 'n'
+  - delay: 157
+    content: i
+  - delay: 69
+    content: t
+  - delay: 921
+    content: "\r\n"
+  - delay: 37
+    content: "\e[0m\e[1mInitializing modules...\e[0m\r\n"
+  - delay: 456
+    content: "Downloading mineiros-io/repository/github 0.1.0 for iac-github...\r\n"
+  - delay: 1372
+    content: "- iac-github in .terraform/modules/iac-github/terraform-github-repository-0.1.0\r\n"
+  - delay: 13
+    content: "\r\n\e[0m\e[1mInitializing the backend...\e[0m\r\n"
+  - delay: 3337
+    content: "\r\n\e[0m\e[1mInitializing provider plugins...\e[0m\r\n"
+  - delay: 522
+    content: "\r\nThe following providers do not have any version constraints in configuration,\r\nso the latest version was installed.\r\n\r\nTo prevent automatic upgrades to new major versions that may contain breaking\r\nchanges, it is recommended to add version = \"...\" constraints to the\r\ncorresponding provider blocks in configuration, with the constraint strings\r\nsuggested below.\r\n\r\n* provider.aws: version = \"~> 2.54\"\r\n\r\n\e[0m\e[1m\e[32mTerraform has been successfully initialized!\e[0m\e[32m\e[0m\r\n\e[0m\e[32m\r\nYou may now begin working with Terraform. Try running \"terraform plan\" to see\r\nany changes that are required for your infrastructure. All Terraform commands\r\nshould now work.\r\n\r\nIf you ever set or change modules or backend configuration for Terraform,\r\nrerun this command to reinitialize your working directory. If you forget, other\r\ncommands will detect it and remind you to do so if necessary.\e[0m\r\n$ "
+  - delay: 785
+    content: t
+  - delay: 180
+    content: e
+  - delay: 158
+    content: r
+  - delay: 116
+    content: r
+  - delay: 155
+    content: a
+  - delay: 111
+    content: f
+  - delay: 114
+    content: o
+  - delay: 111
+    content: r
+  - delay: 157
+    content: m
+  - delay: 68
+    content: ' '
+  - delay: 158
+    content: a
+  - delay: 113
+    content: p
+  - delay: 114
+    content: p
+  - delay: 154
+    content: l
+  - delay: 226
+    content: 'y'
+  - delay: 293
+    content: "\r\n"
+  - delay: 1992
+    content: "Acquiring state lock. This may take a few moments...\r\n"
+  - delay: 5987
+    content: "\e[0m\e[1maws_iam_user.user: Refreshing state... [id=terraform-ci]\e[0m\r\n\e[0m\e[1maws_dynamodb_table.terraform_state_lock: Refreshing state... [id=terraform-state-lock]\e[0m\r\n\e[0m\e[1maws_s3_bucket.terraform_state: Refreshing state... [id=github-terraform-example-terraform-state]\e[0m\r\n"
+  - delay: 2060
+    content: "\e[0m\e[1mdata.aws_iam_policy_document.terraform_s3_list_read_write_policy_document: Refreshing state...\e[0m\r\n\e[0m\e[1mdata.aws_iam_policy_document.terraform_dynamodb_read_write_policy_document: Refreshing state...\e[0m\r\n\e[0m\e[1maws_iam_policy.terraform_dynamodb_read_write_policy: Refreshing state... [id=arn:aws:iam::334571852580:policy/DynamoDBTerraformStateLocksReadWriteAccess]\e[0m\r\n\e[0m\e[1maws_iam_policy.terraform_s3_list_read_write_policy: Refreshing state... [id=arn:aws:iam::334571852580:policy/S3TerraformStateListReadWriteAccess]\e[0m\r\n"
+  - delay: 974
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_dynamodb_read_write_policy: Refreshing state... [id=terraform-ci-20200327121257198800000001]\e[0m\r\n"
+  - delay: 51
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_s3_list_read_write_policy: Refreshing state... [id=terraform-ci-20200327121258416700000002]\e[0m\r\n"
+  - delay: 6343
+    content: "\r\nAn execution plan has been generated and is shown below.\r\nResource actions are indicated with the following symbols:\r\n  \e[32m+\e[0m create\r\n\e[0m\r\nTerraform will perform the following actions:\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"bug\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"d73a4a\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"Something isn't working\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"bug\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"documentation\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"0075ca\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"Improvements or additions to documentation\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"documentation\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"duplicate\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"cfd3d7\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"This issue or pull request already exists\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"duplicate\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"enhancement\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"a2eeef\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"New feature or request\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"enhancement\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"good first issue\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"7057ff\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"Good for newcomers\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"good first issue\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"help wanted\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"008672\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"Extra attention is needed\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"help wanted\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"invalid\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"e4e669\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"This doesn't seem right\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"invalid\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"question\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"d876e3\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"Further information is requested\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"question\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_issue_label.label[\"wontfix\"]\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_issue_label\" \"label\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mcolor\e[0m\e[0m       = \"ffffff\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"This will not be worked on\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m        = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"wontfix\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrepository\e[0m\e[0m  = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0murl\e[0m\e[0m         = (known after apply)\r\n    }\r\n\r\n\e[1m  # module.iac-github.github_repository.repository\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"github_repository\" \"repository\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mallow_merge_commit\e[0m\e[0m = true\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mallow_rebase_merge\e[0m\e[0m = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mallow_squash_merge\e[0m\e[0m = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marchived\e[0m\e[0m           = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mauto_init\e[0m\e[0m          = true\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdefault_branch\e[0m\e[0m     = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m        = \"An example on how to manage a GitHub organization with Terraform.\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0metag\e[0m\e[0m               = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mfull_name\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mgit_clone_url\e[0m\e[0m      = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mgitignore_template\e[0m\e[0m = \"Terraform\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhas_downloads\e[0m\e[0m      = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhas_issues\e[0m\e[0m         = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhas_projects\e[0m\e[0m       = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhas_wiki\e[0m\e[0m           = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhtml_url\e[0m\e[0m           = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhttp_clone_url\e[0m\e[0m     = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m                 = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mlicense_template\e[0m\e[0m   = \"mit\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m               = \"iac-github\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mprivate\e[0m\e[0m            = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mssh_clone_url\e[0m\e[0m      = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0msvn_url\e[0m\e[0m            = (known after apply)\r\n    }\r\n\r\n\e[0m\e[1mPlan:\e[0m 10 to add, 0 to change, 0 to destroy.\e[0m\r\n\r\n\e[0m\e[1mDo you want to perform these actions?\e[0m\r\n  Terraform will perform the actions described above.\r\n  Only 'yes' will be accepted to approve.\r\n\r\n"
+  - delay: 100
+    content: "  \e[1mEnter a value:\e[0m \e[0m"
+  - delay: 1312
+    content: 'y'
+  - delay: 135
+    content: e
+  - delay: 157
+    content: s
+  - delay: 630
+    content: "\r\n\r\n"
+  - delay: 160
+    content: "\e[0m\e[1mmodule.iac-github.github_repository.repository: Creating...\e[0m\e[0m\r\n"
+  - delay: 4969
+    content: "\e[0m\e[1mmodule.iac-github.github_repository.repository: Creation complete after 5s [id=iac-github]\e[0m\e[0m\r\n"
+  - delay: 5
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"bug\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"help wanted\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"duplicate\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"documentation\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"enhancement\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"wontfix\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"invalid\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"question\"]: Creating...\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"good first issue\"]: Creating...\e[0m\e[0m\r\n"
+  - delay: 9997
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"bug\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"documentation\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"enhancement\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"duplicate\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"help wanted\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"invalid\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"wontfix\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"good first issue\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"question\"]: Still creating... [10s elapsed]\e[0m\e[0m\r\n"
+  - delay: 4982
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"bug\"]: Creation complete after 15s [id=iac-github:bug]\e[0m\e[0m\r\n"
+  - delay: 211
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"duplicate\"]: Creation complete after 15s [id=iac-github:duplicate]\e[0m\e[0m\r\n"
+  - delay: 195
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"help wanted\"]: Creation complete after 16s [id=iac-github:help wanted]\e[0m\e[0m\r\n"
+  - delay: 171
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"wontfix\"]: Creation complete after 16s [id=iac-github:wontfix]\e[0m\e[0m\r\n"
+  - delay: 198
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"invalid\"]: Creation complete after 16s [id=iac-github:invalid]\e[0m\e[0m\r\n"
+  - delay: 207
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"enhancement\"]: Creation complete after 16s [id=iac-github:enhancement]\e[0m\e[0m\r\n"
+  - delay: 205
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"documentation\"]: Creation complete after 16s [id=iac-github:documentation]\e[0m\e[0m\r\n"
+  - delay: 182
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"question\"]: Creation complete after 16s [id=iac-github:question]\e[0m\e[0m\r\n"
+  - delay: 189
+    content: "\e[0m\e[1mmodule.iac-github.github_issue_label.label[\"good first issue\"]: Creation complete after 17s [id=iac-github:good first issue]\e[0m\e[0m\r\n"
+  - delay: 1699
+    content: "\e[0m\e[1m\e[32m\r\nApply complete! Resources: 10 added, 0 changed, 0 destroyed.\e[0m\r\n"
+  - delay: 404
+    content: "Releasing state lock. This may take a few moments...\r\n"
+  - delay: 533
+    content: '$ '
+  - delay: 8044
+    content: "logout\r\n"

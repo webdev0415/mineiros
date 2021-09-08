@@ -1,0 +1,8 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "markdown.extension.toc.levels": "2..2",
+    "css.validate": false, // Disable css built-in lint
+    "stylelint.enable": true, // Enable sytlelint
+}

@@ -1,0 +1,171 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/soerenmartius/projects/github-terraform-example/iac-github
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 43
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid 
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 508
+    content: '$ '
+  - delay: 1008
+    content: t
+  - delay: 246
+    content: e
+  - delay: 203
+    content: r
+  - delay: 137
+    content: r
+  - delay: 133
+    content: a
+  - delay: 89
+    content: f
+  - delay: 114
+    content: o
+  - delay: 91
+    content: r
+  - delay: 156
+    content: m
+  - delay: 44
+    content: ' '
+  - delay: 158
+    content: i
+  - delay: 157
+    content: 'n'
+  - delay: 158
+    content: i
+  - delay: 90
+    content: t
+  - delay: 607
+    content: "\r\n"
+  - delay: 38
+    content: "\r\n\e[0m\e[1mInitializing the backend...\e[0m\r\n"
+  - delay: 3850
+    content: "Acquiring state lock. This may take a few moments...\r\n"
+  - delay: 1140
+    content: "\e[0m\e[1mDo you want to copy existing state to the new backend?\e[0m\r\n  Pre-existing state was found while migrating the previous \"local\" backend to the\r\n  newly configured \"s3\" backend. No existing state was found in the newly\r\n  configured \"s3\" backend. Do you want to copy this state to the new \"s3\"\r\n  backend? Enter \"yes\" to copy and \"no\" to start with an empty state.\r\n\r\n"
+  - delay: 102
+    content: "  \e[1mEnter a value:\e[0m \e[0m"
+  - delay: 2611
+    content: 'y'
+  - delay: 182
+    content: e
+  - delay: 154
+    content: s
+  - delay: 2294
+    content: "\r\n\r\n"
+  - delay: 2992
+    content: "Releasing state lock. This may take a few moments...\r\n"
+  - delay: 601
+    content: "\e[0m\e[32m\r\nSuccessfully configured the backend \"s3\"! Terraform will automatically\r\nuse this backend unless the backend configuration changes.\e[0m\r\n"
+  - delay: 2143
+    content: "\r\n\e[0m\e[1mInitializing provider plugins...\e[0m\r\n"
+  - delay: 519
+    content: "\r\nThe following providers do not have any version constraints in configuration,\r\nso the latest version was installed.\r\n\r\nTo prevent automatic upgrades to new major versions that may contain breaking\r\nchanges, it is recommended to add version = \"...\" constraints to the\r\ncorresponding provider blocks in configuration, with the constraint strings\r\nsuggested below.\r\n\r\n* provider.aws: version = \"~> 2.54\"\r\n\r\n\e[0m\e[1m\e[32mTerraform has been successfully initialized!\e[0m\e[32m\e[0m\r\n\e[0m\e[32m\r\nYou may now begin working with Terraform. Try running \"terraform plan\" to see\r\nany changes that are required for your infrastructure. All Terraform commands\r\nshould now work.\r\n\r\nIf you ever set or change modules or backend configuration for Terraform,\r\nrerun this command to reinitialize your working directory. If you forget, other\r\ncommands will detect it and remind you to do so if necessary.\e[0m\r\n$ "
+  - delay: 3620
+    content: "logout\r\n"

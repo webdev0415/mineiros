@@ -1,0 +1,302 @@
+/* stylelint-disable */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.ubuntu-100 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+}
+
+.ubuntu-200 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
+}
+
+.ubuntu-300 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.ubuntu-400 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.ubuntu-500 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.ubuntu-600 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+.ubuntu-700 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.ubuntu-800 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+}
+
+.ubuntu-900 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+}
+
+html {
+  font-size: 14px;
+}
+
+@screen sm {
+  html {
+    font-size: 14px;
+  }
+}
+
+@screen md {
+  html {
+    font-size: 16px;
+  }
+}
+
+@screen lg {
+  html {
+    font-size: 16px;
+  }
+}
+
+@screen xl {
+  html {
+    font-size: 16px;
+  }
+}
+
+.max-w-prose {
+  max-width: 100ch;
+}
+
+.secondary-color-dark,
+.scd {
+  color: #48435c !important;
+}
+
+.bg-secondary-dark,
+.bsd {
+  background-color: #48435c !important;
+}
+
+.nuxt-link-active.secondary-color-dark {
+  color: rgba(242, 39, 81, 1);
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.border-3 {
+  border-radius: 3px;
+}
+
+.professional-services-shadow {
+  background: #fff;
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  width: 27%;
+  margin: 20px;
+}
+
+.professional-services-shadow img {
+  object-fit: scale-down;
+}
+
+.section-image-3 {
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  width: 40%;
+  z-index: -1;
+}
+
+.top-section-height {
+  min-height: calc(100vh - 17rem);
+}
+
+.section-image-1 {
+  position: absolute;
+  left: 40%;
+  z-index: -2;
+  width: 25rem;
+}
+
+.section-image-2 {
+  position: absolute;
+  left: 40%;
+  bottom: -5rem;
+  width: 25rem;
+  z-index: -1;
+}
+
+.what-we-do .feature-icon,
+.why-mineiros .feature-icon {
+  box-shadow: 0px 4px 24px rgba(242, 39, 81, 0.55);
+  border-radius: 20px;
+}
+
+.what-we-do .feature-icon img {
+  width: 50%;
+}
+
+.line-height-62,
+.lh-62 {
+  line-height: 62px;
+}
+
+.font-size-60,
+.fs-60 {
+  font-size: 60px;
+}
+.terraform-services-shadow {
+  box-shadow: 0px 4px 84px rgb(0 0 0 / 8%);
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.image-1-terraform {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-2-terraform {
+  right: 0;
+  top: 15%;
+  z-index: -2;
+}
+
+.catalogue-cards-info {
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+
+.image-3-terraform {
+  right: 0;
+  bottom: -10rem;
+  z-index: -1;
+}
+.message-icons::after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: -15px;
+  width: 10px;
+  left: 34%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f22751;
+}
+
+.bg-silver {
+  background-color: #f9f9f9;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.border-scd {
+  border-color: #48435c;
+}
+
+.section-image-4 {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  bottom: -10rem;
+  height: 250px;
+}
+
+.translate-y-50 {
+  transform: translateY(-50%);
+}
+
+.partners-shadow {
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  margin: 40px 0px;
+}
+
+body .feature-headline,
+body .feature-description {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body .feature-description {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1550px) {
+  body .section-image-3 {
+    width: 30%;
+    top: 0;
+  }
+
+  body .section-image-2,
+  body .section-image-1 {
+    left: 45%;
+    width: 23rem;
+  }
+
+  body .line-height-62 {
+    line-height: 54px;
+    font-size: 50px;
+  }
+
+  body .top-section-height {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1300px) {
+  body .section-image-3 {
+    width: 30%;
+    top: 0;
+  }
+
+  body .section-image-2,
+  body .section-image-1 {
+    left: 48%;
+    width: 17rem;
+  }
+
+  body .line-height-62 {
+    line-height: 45px;
+    font-size: 40px;
+  }
+
+  body .top-section-height {
+    margin-top: 4rem;
+  }
+
+  .font-16 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .custom-responsive-buttons {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 14px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body .top-section-height {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RoughJS &amp; D3.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://cdn.rawgit.com/pshihn/rough/9be60b1e/dist/rough.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+    <style>
+        h1 {
+            font-family: 'Amatic SC';
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Process Box Label -->
+<h1 style="position: absolute; left: 475px; top: 127px; color: grey; text-align: center;">CPU<br/>Core</h1>
+<h1 style="position: absolute; left: 475px; top: 390px; color: grey; text-align: center;">CPU<br/>Core</h1>
+<h1 style="position: absolute; left: 475px; top: 470px; color: grey; text-align: center;">CPU<br/>Core</h1>
+
+<h1 style="position: absolute; left: 210px; top: 65px; color: grey; text-align: center;">Tasks</h1>
+<h1 style="position: absolute; left: 210px; top: 215px; color: grey; text-align: center;">Tasks</h1>
+
+<h1 style="position: absolute; left: 210px; top: 365px; color: grey; text-align: center;">Tasks</h1>
+<h1 style="position: absolute; left: 210px; top: 520px; color: grey; text-align: center;">Tasks</h1>
+
+<div id="viz"></div>
+
+<script>
+    WebFont.load({
+        google: {
+            families: ['Amatic SC']
+        },
+        active: function () {
+            draw();
+        }
+    });
+
+    function draw() {
+
+        var width = 800, height = 1000, margin = 0, labels_px = 120;
+
+        var canvas = d3.select('#viz').append('canvas')
+            .attr("id", "canvas")
+            .attr('width', width)
+            .attr('height', height);
+        var rc = rough.canvas(document.getElementById('canvas'));
+
+        const objectSettings = {roughness: 1, stroke: 'grey'};
+        const objectSettingsFilled = {roughness: 1, stroke: 'grey', fill: 'grey'};
+
+
+        //
+        // Concurrency
+        //
+
+        // CPU / Core Rectangle
+        rc.rectangle(450, 130, 65, 65, objectSettings);
+        rc.line(430, 160, 390, 130, objectSettings);
+        rc.line(430, 170, 390, 200, objectSettings);
+
+        // Top Circles
+        rc.circle(80, 120, 25, objectSettingsFilled); 
+        rc.circle(120, 120, 25, objectSettingsFilled);
+        rc.circle(160, 120, 25, objectSettingsFilled);
+        rc.circle(200, 120, 25, objectSettingsFilled);
+        rc.circle(240, 120, 25, objectSettingsFilled);
+        rc.circle(280, 120, 25, objectSettingsFilled);
+        rc.circle(320, 120, 25, objectSettingsFilled);
+        rc.circle(360, 120, 25, objectSettingsFilled);
+
+        // Bottom Circles
+        rc.circle(80,  200, 25, objectSettingsFilled);
+        rc.circle(120, 200, 25, objectSettingsFilled);
+        rc.circle(160, 200, 25, objectSettingsFilled);
+        rc.circle(200, 200, 25, objectSettingsFilled);
+        rc.circle(240, 200, 25, objectSettingsFilled);
+        rc.circle(280, 200, 25, objectSettingsFilled);
+        rc.circle(320, 200, 25, objectSettingsFilled);
+        rc.circle(360, 200, 25, objectSettingsFilled);
+
+        //
+        // Parallelism
+        //
+
+        // CPU / Core Rectangle
+        rc.rectangle(450, 390, 65, 65, objectSettings);
+        rc.line(430, 420, 390, 420, objectSettings);
+
+        rc.rectangle(450, 470, 65, 65, objectSettings);
+        rc.line(430, 500, 390, 500, objectSettings);
+
+        // Top Circles
+        rc.circle(80,  420, 25, objectSettingsFilled);
+        rc.circle(120, 420, 25, objectSettingsFilled);
+        rc.circle(160, 420, 25, objectSettingsFilled);
+        rc.circle(200, 420, 25, objectSettingsFilled);
+        rc.circle(240, 420, 25, objectSettingsFilled);
+        rc.circle(280, 420, 25, objectSettingsFilled);
+        rc.circle(320, 420, 25, objectSettingsFilled);
+        rc.circle(360, 420, 25, objectSettingsFilled);
+
+        // Bottom Circles
+        rc.circle(80,  500, 25, objectSettingsFilled);
+        rc.circle(120, 500, 25, objectSettingsFilled);
+        rc.circle(160, 500, 25, objectSettingsFilled);
+        rc.circle(200, 500, 25, objectSettingsFilled);
+        rc.circle(240, 500, 25, objectSettingsFilled);
+        rc.circle(280, 500, 25, objectSettingsFilled);
+        rc.circle(320, 500, 25, objectSettingsFilled);
+        rc.circle(360, 500, 25, objectSettingsFilled);
+    }
+</script>
+
+</body>
+</html>

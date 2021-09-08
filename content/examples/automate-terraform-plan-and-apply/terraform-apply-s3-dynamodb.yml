@@ -1,0 +1,227 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/soerenmartius/projects/github-terraform-example/iac-github
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 43
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 522
+    content: '$ '
+  - delay: 924
+    content: t
+  - delay: 269
+    content: e
+  - delay: 160
+    content: r
+  - delay: 159
+    content: r
+  - delay: 155
+    content: a
+  - delay: 133
+    content: f
+  - delay: 137
+    content: o
+  - delay: 157
+    content: r
+  - delay: 68
+    content: m
+  - delay: 89
+    content: ' '
+  - delay: 136
+    content: i
+  - delay: 179
+    content: 'n'
+  - delay: 137
+    content: i
+  - delay: 111
+    content: t
+  - delay: 384
+    content: "\r\n"
+  - delay: 43
+    content: "\r\n\e[0m\e[1mInitializing the backend...\e[0m\r\n"
+  - delay: 41
+    content: "\r\n\e[0m\e[1mInitializing provider plugins...\e[0m\r\n- Checking for available provider plugins...\r\n"
+  - delay: 661
+    content: "- Downloading plugin for provider \"github\" (hashicorp/github) 2.4.1...\r\n"
+  - delay: 778
+    content: "- Downloading plugin for provider \"aws\" (hashicorp/aws) 2.54.0...\r\n"
+  - delay: 2852
+    content: "\r\nThe following providers do not have any version constraints in configuration,\r\nso the latest version was installed.\r\n\r\nTo prevent automatic upgrades to new major versions that may contain breaking\r\nchanges, it is recommended to add version = \"...\" constraints to the\r\ncorresponding provider blocks in configuration, with the constraint strings\r\nsuggested below.\r\n\r\n* provider.aws: version = \"~> 2.54\"\r\n\r\n\e[0m\e[1m\e[32mTerraform has been successfully initialized!\e[0m\e[32m\e[0m\r\n\e[0m\e[32m\r\nYou may now begin working with Terraform. Try running \"terraform plan\" to see\r\nany changes that are required for your infrastructure. All Terraform commands\r\nshould now work.\r\n\r\nIf you ever set or change modules or backend configuration for Terraform,\r\nrerun this command to reinitialize your working directory. If you forget, other\r\ncommands will detect it and remind you to do so if necessary.\e[0m\r\n$ "
+  - delay: 1401
+    content: t
+  - delay: 204
+    content: e
+  - delay: 178
+    content: r
+  - delay: 161
+    content: r
+  - delay: 131
+    content: a
+  - delay: 90
+    content: f
+  - delay: 113
+    content: o
+  - delay: 112
+    content: r
+  - delay: 91
+    content: m
+  - delay: 69
+    content: ' '
+  - delay: 225
+    content: a
+  - delay: 155
+    content: p
+  - delay: 139
+    content: p
+  - delay: 178
+    content: l
+  - delay: 248
+    content: 'y'
+  - delay: 314
+    content: "\r\n"
+  - delay: 8551
+    content: "\r\nAn execution plan has been generated and is shown below.\r\nResource actions are indicated with the following symbols:\r\n  \e[32m+\e[0m create\r\n \e[36m<=\e[0m read (data resources)\r\n\e[0m\r\nTerraform will perform the following actions:\r\n\r\n\e[1m  # data.aws_iam_policy_document.terraform_dynamodb_read_write_policy_document\e[0m will be read during apply\r\n  # (config refers to values not yet known)\e[0m\e[0m\r\n\e[0m \e[36m<=\e[0m\e[0m data \"aws_iam_policy_document\" \"terraform_dynamodb_read_write_policy_document\"  {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m   = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mjson\e[0m\e[0m = (known after apply)\r\n\r\n      \e[32m+\e[0m \e[0mstatement {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mactions\e[0m\e[0m   = [\r\n              \e[32m+\e[0m \e[0m\"dynamodb:DeleteItem\",\r\n              \e[32m+\e[0m \e[0m\"dynamodb:GetItem\",\r\n              \e[32m+\e[0m \e[0m\"dynamodb:PutItem\",\r\n            ]\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mresources\e[0m\e[0m = [\r\n              \e[32m+\e[0m \e[0m(known after apply),\r\n            ]\r\n        }\r\n    }\r\n\r\n\e[1m  # data.aws_iam_policy_document.terraform_s3_list_read_write_policy_document\e[0m will be read during apply\r\n  # (config refers to values not yet known)\e[0m\e[0m\r\n\e[0m \e[36m<=\e[0m\e[0m data \"aws_iam_policy_document\" \"terraform_s3_list_read_write_policy_document\"  {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m   = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mjson\e[0m\e[0m = (known after apply)\r\n\r\n      \e[32m+\e[0m \e[0mstatement {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mactions\e[0m\e[0m   = [\r\n              \e[32m+\e[0m \e[0m\"dynamodb:DeleteItem\",\r\n              \e[32m+\e[0m \e[0m\"dynamodb:GetItem\",\r\n              \e[32m+\e[0m \e[0m\"dynamodb:PutItem\",\r\n            ]\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mresources\e[0m\e[0m = [\r\n              \e[32m+\e[0m \e[0m(known after apply),\r\n            ]\r\n        }\r\n    }\r\n\r\n\e[1m  # aws_dynamodb_table.terraform_state_lock\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_dynamodb_table\" \"terraform_state_lock\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marn\e[0m\e[0m              = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mbilling_mode\e[0m\e[0m     = \"PROVISIONED\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhash_key\e[0m\e[0m         = \"LockID\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m               = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m             = \"terraform-state-lock\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mread_capacity\e[0m\e[0m    = 20\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mstream_arn\e[0m\e[0m       = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mstream_label\e[0m\e[0m     = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mstream_view_type\e[0m\e[0m = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mwrite_capacity\e[0m\e[0m   = 20\r\n\r\n      \e[32m+\e[0m \e[0mattribute {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m = \"LockID\"\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mtype\e[0m\e[0m = \"S\"\r\n        }\r\n\r\n      \e[32m+\e[0m \e[0mpoint_in_time_recovery {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0menabled\e[0m\e[0m = (known after apply)\r\n        }\r\n\r\n      \e[32m+\e[0m \e[0mserver_side_encryption {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0menabled\e[0m\e[0m     = (known after apply)\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mkms_key_arn\e[0m\e[0m = (known after apply)\r\n        }\r\n    }\r\n\r\n\e[1m  # aws_iam_policy.terraform_dynamodb_read_write_policy\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_iam_policy\" \"terraform_dynamodb_read_write_policy\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marn\e[0m\e[0m         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"This policy grants limited read and write permissions to the Terraform DyanmoDB state lock table.\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"DynamoDBTerraformStateLocksReadWriteAccess\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpath\e[0m\e[0m        = \"/\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpolicy\e[0m\e[0m      = (known after apply)\r\n    }\r\n\r\n\e[1m  # aws_iam_policy.terraform_s3_list_read_write_policy\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_iam_policy\" \"terraform_s3_list_read_write_policy\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marn\e[0m\e[0m         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mdescription\e[0m\e[0m = \"This policy grants limited read and write permissions to the Terraform DyanmoDB state lock table.\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m        = \"S3TerraformStateListReadWriteAccess\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpath\e[0m\e[0m        = \"/\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpolicy\e[0m\e[0m      = (known after apply)\r\n    }\r\n\r\n\e[1m  # aws_iam_user.user\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_iam_user\" \"user\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marn\e[0m\e[0m           = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mforce_destroy\e[0m\e[0m = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m            = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mname\e[0m\e[0m          = \"terraform-ci\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpath\e[0m\e[0m          = \"/\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0munique_id\e[0m\e[0m     = (known after apply)\r\n    }\r\n\r\n\e[1m  # aws_iam_user_policy_attachment.terraform_dynamodb_read_write_policy\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_iam_user_policy_attachment\" \"terraform_dynamodb_read_write_policy\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpolicy_arn\e[0m\e[0m = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0muser\e[0m\e[0m       = \"terraform-ci\"\r\n    }\r\n\r\n\e[1m  # aws_iam_user_policy_attachment.terraform_s3_list_read_write_policy\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_iam_user_policy_attachment\" \"terraform_s3_list_read_write_policy\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mpolicy_arn\e[0m\e[0m = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0muser\e[0m\e[0m       = \"terraform-ci\"\r\n    }\r\n\r\n\e[1m  # aws_s3_bucket.terraform_state\e[0m will be created\e[0m\e[0m\r\n\e[0m  \e[32m+\e[0m\e[0m resource \"aws_s3_bucket\" \"terraform_state\" {\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0macceleration_status\e[0m\e[0m         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0macl\e[0m\e[0m                         = \"private\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0marn\e[0m\e[0m                         = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mbucket\e[0m\e[0m                      = \"github-terraform-example-terraform-state\"\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mbucket_domain_name\e[0m\e[0m          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mbucket_regional_domain_name\e[0m\e[0m = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mforce_destroy\e[0m\e[0m               = false\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mhosted_zone_id\e[0m\e[0m              = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mid\e[0m\e[0m                          = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mregion\e[0m\e[0m                      = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mrequest_payer\e[0m\e[0m               = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mwebsite_domain\e[0m\e[0m              = (known after apply)\r\n      \e[32m+\e[0m \e[0m\e[1m\e[0mwebsite_endpoint\e[0m\e[0m            = (known after apply)\r\n\r\n      \e[32m+\e[0m \e[0mserver_side_encryption_configuration {\r\n          \e[32m+\e[0m \e[0mrule {\r\n              \e[32m+\e[0m \e[0mapply_server_side_encryption_by_default {\r\n                  \e[32m+\e[0m \e[0m\e[1m\e[0msse_algorithm\e[0m\e[0m = \"AES256\"\r\n                }\r\n            }\r\n        }\r\n\r\n      \e[32m+\e[0m \e[0mversioning {\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0menabled\e[0m\e[0m    = true\r\n          \e[32m+\e[0m \e[0m\e[1m\e[0mmfa_delete\e[0m\e[0m = false\r\n        }\r\n    }\r\n\r\n\e[0m\e[1mPlan:\e[0m 7 to add, 0 to change, 0 to destroy.\e[0m\r\n\r\n\e[0m\e[1mDo you want to perform these actions?\e[0m\r\n  Terraform will perform the actions described above.\r\n  Only 'yes' will be accepted to approve.\r\n\r\n"
+  - delay: 100
+    content: "  \e[1mEnter a value:\e[0m \e[0m"
+  - delay: 1823
+    content: 'y'
+  - delay: 54
+    content: e
+  - delay: 171
+    content: s
+  - delay: 1619
+    content: "\r\n\r\n"
+  - delay: 2506
+    content: "\e[0m\e[1maws_iam_user.user: Creating...\e[0m\e[0m\r\n\e[0m\e[1maws_dynamodb_table.terraform_state_lock: Creating...\e[0m\e[0m\r\n\e[0m\e[1maws_s3_bucket.terraform_state: Creating...\e[0m\e[0m\r\n"
+  - delay: 1098
+    content: "\e[0m\e[1maws_iam_user.user: Creation complete after 1s [id=terraform-ci]\e[0m\e[0m\r\n"
+  - delay: 6847
+    content: "\e[0m\e[1maws_dynamodb_table.terraform_state_lock: Creation complete after 8s [id=terraform-state-lock]\e[0m\e[0m\r\n"
+  - delay: 11
+    content: "\e[0m\e[1mdata.aws_iam_policy_document.terraform_s3_list_read_write_policy_document: Refreshing state...\e[0m\r\n\e[0m\e[1mdata.aws_iam_policy_document.terraform_dynamodb_read_write_policy_document: Refreshing state...\e[0m\r\n"
+  - delay: 20
+    content: "\e[0m\e[1maws_iam_policy.terraform_s3_list_read_write_policy: Creating...\e[0m\e[0m\r\n\e[0m\e[1maws_iam_policy.terraform_dynamodb_read_write_policy: Creating...\e[0m\e[0m\r\n"
+  - delay: 1489
+    content: "\e[0m\e[1maws_iam_policy.terraform_dynamodb_read_write_policy: Creation complete after 2s [id=arn:aws:iam::334571852580:policy/DynamoDBTerraformStateLocksReadWriteAccess]\e[0m\e[0m\r\n"
+  - delay: 11
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_dynamodb_read_write_policy: Creating...\e[0m\e[0m\r\n"
+  - delay: 90
+    content: "\e[0m\e[1maws_s3_bucket.terraform_state: Creation complete after 10s [id=github-terraform-example-terraform-state]\e[0m\e[0m\r\n"
+  - delay: 1120
+    content: "\e[0m\e[1maws_iam_policy.terraform_s3_list_read_write_policy: Creation complete after 3s [id=arn:aws:iam::334571852580:policy/S3TerraformStateListReadWriteAccess]\e[0m\e[0m\r\n"
+  - delay: 11
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_s3_list_read_write_policy: Creating...\e[0m\e[0m\r\n"
+  - delay: 348
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_dynamodb_read_write_policy: Creation complete after 1s [id=terraform-ci-20200327121257198800000001]\e[0m\e[0m\r\n"
+  - delay: 1090
+    content: "\e[0m\e[1maws_iam_user_policy_attachment.terraform_s3_list_read_write_policy: Creation complete after 1s [id=terraform-ci-20200327121258416700000002]\e[0m\e[0m\r\n"
+  - delay: 18
+    content: "\e[0m\e[1m\e[32m\r\nApply complete! Resources: 7 added, 0 changed, 0 destroyed.\e[0m\r\n$ "
+  - delay: 4754
+    content: "logout\r\n"
